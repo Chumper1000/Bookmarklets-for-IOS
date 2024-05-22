@@ -1,4 +1,5 @@
 javascript:(function(){
-    var proxyUrl = "44.31.169.224" + encodeURIComponent(window.location.href);
+    var proxyIp = "44.31.169.224"; // Replace this with the IP address of your proxy server
+    var proxyUrl = "http://" + proxyIp + "/?url=" + encodeURIComponent(window.location.href);
     window.location.href = proxyUrl;
 })();
