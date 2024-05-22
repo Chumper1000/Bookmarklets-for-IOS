@@ -1,0 +1,4 @@
+javascript:(function(){
+    var proxyUrl = "https://example-proxy.com/?url=" + encodeURIComponent(window.location.href);
+    window.location.href = proxyUrl;
+})();
